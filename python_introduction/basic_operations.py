@@ -17,4 +17,3 @@ print(f"Addition of {number1} and {number2} is {sum}")
 print(f"Subtraction of {number1} and {number2} is {difference}")
 
 print(f"Multiplication of {number1} and {number2} is {product}")
-
