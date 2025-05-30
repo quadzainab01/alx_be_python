@@ -2,8 +2,8 @@
 
 # Prompt for a single task, the task description, priority, and time sensitivity
 task = input("Enter your task: ")
-task_priority = input("Enter your task's Priority (high, medium, low): ").lower()
-time_bound = input("Is your task time bound? (yes or no): ").lower()
+task_priority = input("Priority (high/medium/low): ").lower()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 # Process the task based on priority and time sensitivity
 match task_priority:
@@ -23,4 +23,5 @@ match task_priority:
         else:
             print(f"Note: '{task}' is a low priority task. Consider completing it when you have free time.")
     case _:
-        print("⚠️ Invalid priority entered. Please enter high, medium, or low.")
+        print("Invalid priority entered. Please enter high, medium, or low.")
+
