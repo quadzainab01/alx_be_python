@@ -20,23 +20,18 @@ def main():
             shopping_list.append(item)  # Add the item to the shopping list
             print(f'"{item}" has been added to your shopping list.')  # Confirm addition
 
-
         elif choice == '2':
             # User chose to remove an item
             item = input("Enter the item to remove: ").strip()  # Prompt for the item to remove
-
             if item in shopping_list:
                 shopping_list.remove(item)  # Remove the item if it exists in the list
                 print(f'"{item}" has been removed from your shopping list.')  # Confirm removal
-
             else:
                 # Item not found in the list
                 print(f'"{item}" is not in your shopping list.')  # Inform user item not found
 
-
         elif choice == '3':
             # User chose to view the shopping list
-
             if shopping_list:
                 print("Your shopping list:")  # Print heading
                 # Enumerate the list starting from 1 to number the items
@@ -46,7 +41,6 @@ def main():
                 # Shopping list is empty
                 print("Your shopping list is empty.")  # Inform user
 
-
         elif choice == '4':
             # User chose to exit the program
             print("Goodbye!")  # Farewell message
@@ -55,7 +49,6 @@ def main():
         else:
             # User entered an invalid menu choice
             print("Invalid choice. Please try again.")  # Ask for a valid choice
-
 
 # Entry point check — only run main if this script is executed directly
 if __name__ == "__main__":
