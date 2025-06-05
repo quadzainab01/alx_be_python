@@ -1,4 +1,7 @@
+# Define the Operations to Perform
+
 def perform_operation(num1, num2, operation):
+
     # Check if the operation is addition
     if operation == "add":
         return num1 + num2  # Return the sum of num1 and num2
@@ -16,6 +19,7 @@ def perform_operation(num1, num2, operation):
         # Handle division by zero case
         if num2 == 0:
             return "Error: Cannot divide by zero."  # Return an error message for division by zero
+
         else:
             return num1 / num2  # Return the quotient of num1 divided by num2
 
