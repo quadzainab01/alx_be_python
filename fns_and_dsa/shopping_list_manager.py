@@ -1,10 +1,11 @@
-odef display_menu():
+def display_menu():
     # Function to display the main menu options to the user
-    print("\nShopping List Manager")  # Print a blank line and the program title
-    print("1. Add Item")             # Option 1: Add an item
-    print("2. Remove Item")          # Option 2: Remove an item
-    print("3. View List")            # Option 3: View the current shopping list
-    print("4. Exit")                 # Option 4: Exit the program
+    print()
+    print(f"Shopping List Manager")  # Matches expected output format
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
 
 def main():
     # Main function containing the program logic
