@@ -8,7 +8,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up the calculator before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(0, 0), 0)
@@ -32,6 +32,6 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(0, 1), 0)
         self.assertIsNone(self.calc.divide(5, 0))  # edge case: divide by zero
 
-# This allows the file to be run directly
 if __name__ == '__main__':
     unittest.main()
+
